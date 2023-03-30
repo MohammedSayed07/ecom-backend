@@ -4,6 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 object Categories {
+    const val ALL = "All"
     const val MENS = "mens"
     const val WOMENS = "womens"
     const val KIDS = "kids"

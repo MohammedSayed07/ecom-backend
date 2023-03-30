@@ -28,6 +28,7 @@ fun Route.getCategories(){
 fun Route.getProductsOfCategory() {
     get("/products/category/{category}"){
         val categorizedProducts = when(call.parameters["category"]){
+            Categories.ALL -> Store.products
             Categories.WOMENS -> Store.products.filter { it.category == Categories.WOMENS }
             Categories.MENS -> Store.products.filter { it.category == Categories.MENS }
             Categories.KIDS -> Store.products.filter { it.category == Categories.KIDS }

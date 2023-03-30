@@ -7,6 +7,7 @@ import com.example.data.model.Rating
 
 object Store {
     val categories = listOf<String>(
+        Categories.ALL,
         Categories.MENS,
         Categories.WOMENS,
         Categories.KIDS,
